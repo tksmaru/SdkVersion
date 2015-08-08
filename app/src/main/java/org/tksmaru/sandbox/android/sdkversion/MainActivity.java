@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.NotificationCompat;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -106,6 +107,31 @@ public class MainActivity extends AppCompatActivity {
 
                 NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
                 manager.notify(3, notification);
+            }
+        });
+
+        /*
+         * Support Library を使う
+         */
+        Button button4 = (Button) this.findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Context context = getApplicationContext();
+                Intent bootIntent = new Intent(context, MainActivity.class);
+                PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, bootIntent, 0);
+
+                Notification notification = new NotificationCompat.Builder(context)
+                        .setSmallIcon(R.mipmap.ic_launcher)
+                        .setContentTitle("notification type 4")
+                        .setContentText("this notification works fine on over API level 15")
+                        .setContentIntent(pendingIntent)
+                        .setColor(Color.RED)
+                        .build();
+
+                NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+                manager.notify(4, notification);
             }
         });
     }

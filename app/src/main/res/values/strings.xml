@@ -10,6 +10,9 @@
     <string name="sub_title3">Notification Sample 3</string>
     <string name="text3">実行時API levelに応じてメソッドを使いわけます</string>
 
+    <string name="sub_title4">Notification Sample 4</string>
+    <string name="text4">Support Libraryを使います</string>
+
     <string name="action_settings">Settings</string>
     <string name="notification">notify</string>
 
