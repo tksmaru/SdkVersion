@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text1">Android 5.1 以下では動作しません</string>
+    <string name="text2">API level 15 以降で追加されたメソッドは使いません</string>
+    <string name="text3">API level 15 以降で追加されたメソッドは使いません</string>
+    <string name="text4">Support Libraryを使います</string>
+</resources>

@@ -1,19 +1,19 @@
 <resources>
-    <string name="app_name">SdkVersion</string>
+    <string name="app_name" translatable="false">SdkVersion</string>
 
-    <string name="sub_title1">Notification Sample 1</string>
+    <string name="sub_title1" translatable="false">Notification Sample 1</string>
     <string name="text1">Android 5.1 以下では動作しません</string>
 
-    <string name="sub_title2">Notification Sample 2</string>
+    <string name="sub_title2" translatable="false">Notification Sample 2</string>
     <string name="text2">API level 15 以降で追加されたメソッドは使いません</string>
 
-    <string name="sub_title3">Notification Sample 3</string>
+    <string name="sub_title3" translatable="false">Notification Sample 3</string>
     <string name="text3">実行時API levelに応じてメソッドを使いわけます</string>
 
-    <string name="sub_title4">Notification Sample 4</string>
+    <string name="sub_title4" translatable="false">Notification Sample 4</string>
     <string name="text4">Support Libraryを使います</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="notification">notify</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="notification" translatable="false">notify</string>
 
 </resources>
